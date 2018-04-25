@@ -1,0 +1,65 @@
+{
+    "parser": "babel-eslint",
+    "env": {
+        "browser": true,
+        "node": true,
+        "mocha": true
+    },
+    "extends": "airbnb",
+    "rules": {
+        "no-debugger": ["off"],
+        "comma-dangle": ["off"],
+        "import/extensions": 0,
+        "no-unused-vars": ["warn"],
+        "object-curly-spacing": ["off"],
+        "padded-blocks": ["off"],
+        "react/jsx-closing-bracket-location": ["off"],
+        "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+        "react/jsx-space-before-closing": ["off"],
+        "react/prefer-stateless-function": ["off"],
+        "react/jsx-indent": ["error", 4],
+        "react/jsx-curly-spacing": ["off"],
+        "react/jsx-indent-props": ["error", 4],
+        "no-underscore-dangle": [ "off"],
+        "import/no-unresolved": ["error", {
+            "ignore": [
+                "config",
+                "src",
+                "components/",
+                "actions/",
+                "sources/",
+                "styles/",
+                "images/",
+                "containers",
+                "middlewares",
+                "views"
+            ]
+        }],
+        "import/no-extraneous-dependencies": ["off", {
+            "devDependencies": true,
+            "optionalDependencies": false,
+            "peerDependencies": false
+        }],
+        "indent": ["error", 4, {
+            "SwitchCase": 1,
+            "VariableDeclarator": 1,
+            "outerIIFEBody": 1,
+            "FunctionDeclaration": {
+                "parameters": 1,
+                "body": 1
+            },
+            "FunctionExpression": {
+                "parameters": 1,
+                "body": 1
+            }
+        }],
+        "arrow-body-style": ["warn", "as-needed"],
+        "max-len": ["warn", {
+            "ignoreUrls": true,
+            "ignoreStrings": true
+        }],
+        "no-script-url": ["warn"],
+        "quote-props": ["warn", "as-needed"],
+        "arrow-parens": ["error", "as-needed"]
+    }
+}
