@@ -19,7 +19,7 @@ class WebpackDistConfig extends WebpackBaseConfig {
             entry: {
                 main: ['./client.js'],
                 vendor: ['react', 'react-dom', 'redux', 'react-redux', 'react-router-dom',
-                    'react-router-redux', 'react-css-modules', 'history']
+                    'react-router-redux', 'react-css-modules', 'history', 'antd']
             },
             plugins: [
                 new webpack.DefinePlugin({

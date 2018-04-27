@@ -8,7 +8,8 @@
         "transform-decorators-legacy",
         "transform-object-rest-spread",
         "react-hot-loader/babel",
-        "syntax-dynamic-import"
+        "syntax-dynamic-import",
+        ["import", { "libraryName": "antd", "libraryDirectory": "es", "style": "css" }]
     ],
     "env": {
         "test": {

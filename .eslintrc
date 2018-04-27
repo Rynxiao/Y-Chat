@@ -60,6 +60,8 @@
         }],
         "no-script-url": ["warn"],
         "quote-props": ["warn", "as-needed"],
-        "arrow-parens": ["error", "as-needed"]
+        "arrow-parens": ["error", "as-needed"],
+        "no-trailing-spaces": ["error", { "skipBlankLines": true }],
+        "class-methods-use-this": ["off"]
     }
 }
